@@ -59,6 +59,7 @@ func Merge(chunks []*chunk, length int) []byte {
 			counter--
 		}
 	}
+	close(ch)
 	return bytes
 }
 
